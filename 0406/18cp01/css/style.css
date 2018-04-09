@@ -163,9 +163,8 @@ a:hover {
 	コンテンツ
 */
 .contents-outer {
-	padding: 0 15px 15px 15px;
-	background: #8aba40;
-	border-top: 15px solid #fff;
+	padding: 15px;
+	background: #f2ead9;
 }
 .contents-inner {
 	background: #ffffff;
@@ -180,9 +179,9 @@ a:hover {
 */
 .page-title {
 	padding: 20px 0 18px 0;
-	background: #8aba40;
-	font-size: 23px;
-	line-height: 1.2;
+	background: #653425;
+	font-size: 24px;
+	line-height: 26px;
 	text-align: center;
 	color: #fff;
 	letter-spacing: 2px;

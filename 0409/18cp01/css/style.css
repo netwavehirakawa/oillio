@@ -1,0 +1,917 @@
+@charset "utf-8";
+/* ////////////////////////////////////////////////////////////
+	File Name	common.css
+*/
+
+/*============================================================
+	[RESET DEFAULT TAGS]
+*/
+html,body { background:#FFFFFF; }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,textarea,
+p,blockquote,th,td,embed,button { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+li { list-style:none; }
+caption,th { text-align:left; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; font-variant:normal; }
+sup { vertical-align:text-top; }
+sub { vertical-align:text-bottom; }
+legend { color:#000000; }
+area { outline: 0; }
+
+/*============================================================
+	[RESET DEFAULT FONT]
+*/
+body { font-size:100%; color:#000000; }
+input,button,textarea { font-weight:inherit; font-size:99%; }
+table { font-size:inherit; font-size:100%; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; }
+
+/*============================================================
+	[HTML]
+*/
+html {
+	overflow-y: scroll;
+}
+html, body {
+	background: #88b93e;
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color: #000;
+}
+img {
+	vertical-align: top;
+}
+a {
+	color: #06c;
+	text-decoration:underline;
+}
+a:hover {
+	color: #39c;
+}
+
+.haslayout-pc {
+	display: block !important;
+}
+.haslayout-sp {
+	display: none !important;
+}
+
+/*============================================================
+	コンテナ
+*/
+#container {
+	border-top: 4px solid #8aba40;
+	width: 100%;
+		background: #fff url(../img/bg_body.png) 0 0 repeat;
+	/*background: transparent url(../img/bg_body_top.png) 0 0 repeat-x;*/
+}
+.container-inner {
+	position: relative;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+	z-index: 1;
+}
+
+/*============================================================
+	ヘッダー
+*/
+.header {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 1;
+	width: 100%;
+}
+.header .logo {
+	position: absolute;
+	top: -4px; left: 30px;
+}
+.header .logo img {
+	width: 80px;
+	height: auto;
+}
+
+/*============================================================
+	フッター
+*/
+.footer.teaser {
+	overflow: hidden;
+	padding: 60px 0 50px 0;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.4;
+	background: #ece3d1;
+	color: #653425;
+	z-index: 0;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.footer {
+	overflow: hidden;
+	padding: 59px 0 50px 0;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.2;
+	background: #88b93e;
+	color: #fff;
+}
+.footer p {
+	display: inline;
+	padding: 0 5px;
+}
+/* SNSボタン */
+.footer .sns {
+	position: relative;
+	left: -9999px;
+	padding-bottom: 10px;
+}
+.footer .sns ul {
+	margin: 0 auto;
+	display: table;
+}
+.footer .sns ul li {
+	display: table-cell;
+	padding: 2px;
+	font-size: 12px;
+	line-height: 1;
+	vertical-align: top;
+}
+
+/*@media screen and (min-width: 1000px)  {
+	.footer.teaser {
+		overflow: hidden;
+		padding: 50px 0 50px 0;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.2;
+		background: #ece3d1;
+		color: #653425;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+*/
+
+/*============================================================
+	コンテンツ
+*/
+.contents-outer {
+	padding: 0 15px 15px 15px;
+	background: #8aba40;
+	border-top: 15px solid #fff;
+}
+.contents-inner {
+	background: #ffffff;
+}
+.contents {
+	font-size: 14px;
+	line-height: 1.9;
+}
+
+/*============================================================
+	ページタイトル
+*/
+.page-title {
+	padding: 20px 0 18px 0;
+	background: #8aba40;
+	font-size: 23px;
+	line-height: 1.2;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2px;
+	-webkit-font-smoothing: antialiased;
+}
+.page-title br {
+	display: none;
+}
+
+/*============================================================
+	ページ下部エリア
+*/
+.foot-area {
+	position: relative;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%; height: 90px;
+}
+.btn-home {
+	position: absolute;
+	top: 32px; right: 0;
+}
+.btn-home a {
+	overflow: hidden;
+	display: block;
+	width: 125px; height: 21px;
+	text-indent: -999em;
+	background: transparent url(../img/btn_home.png) 0 0 no-repeat;
+}
+
+/*============================================================
+	リスト
+*/
+.contents ul.list li {
+	padding-left: 16px;
+	background: transparent url(../img/point_circle.png) 0 0.45em no-repeat;
+}
+
+/*============================================================
+	フォーム
+*/
+.contents .must {
+	color: #ff0000;
+}
+.contents .form {
+	margin: 30px 0 0 0;
+}
+.contents .form table {
+	width: 100%;
+	border-top: 5px solid #013b90;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.contents .form table th,
+.contents .form table td {
+	padding: 16px 0;
+	border-top: 1px solid #fff;
+	font-weight: normal;
+}
+.contents .form table th {
+	width: 36%;
+	min-width: 240px;
+	background: #e4ede4;
+}
+.contents .form table th div {
+	padding-left: 8%;
+	padding-right: 4%;
+}
+.contents .form table th .note {
+	display: block;
+	padding: 5px 0 0 0;
+	font-size: 10px;
+	line-height: 1.2;
+}
+.contents .form table td {
+	width: 64%;
+	background: #fff2f8;
+	word-break: break-all;
+}
+.contents .form table td div {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.contents .form table .inline {
+	display: inline;
+}
+.contents .form select {
+	padding: 4px;
+}
+.contents input.input {
+	padding: 4px 2px;
+	border: 1px solid #b1b1b1;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	line-height: 1.3em;
+	resize: none;
+	outline: 0;
+}
+
+/* attention */
+.contents .attention {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+/*============================================================
+	ボタン
+*/
+.contents .btn:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+.contents .btn {
+	margin: 0 auto;
+	padding: 40px 0;
+	text-align: center;
+	zoom: 1;
+}
+.contents .btn div {
+	margin: 0 auto;
+	width: 300px; height: 102px;
+}
+.contents .btn .btn_entry {
+	background: transparent url(../img/btn_entry.png) 0 0 no-repeat;
+}
+.contents .btn .btn_next {
+	background: transparent url(../img/btn_next.png) 0 0 no-repeat;
+}
+.contents .btn .btn_confirm {
+	background: transparent url(../img/btn_confirm.png) 0 0 no-repeat;
+}
+.contents .btn .btn_correction {
+	background: transparent url(../img/btn_correction.png) 0 0 no-repeat;
+}
+.contents .btn .btn_submit {
+	background: transparent url(../img/btn_submit.png) 0 0 no-repeat;
+}
+.contents .btn .btn_top {
+	background: transparent url(../img/btn_top.png) 0 0 no-repeat;
+}
+.contents .btn input {
+	display: block;
+	overflow: hidden;
+	width: 100%; height: 95px;
+	background: transparent url(../img/wall.png) 0 0 repeat;
+	text-indent: -9999em;
+	border: 0;
+	cursor: pointer;
+}
+.contents .btn a {
+	display: block;
+	overflow: hidden;
+	width: 100%; height: 100%;
+	text-indent: -9999em;
+}
+.contents .btn p {
+	padding: 11px 0 0 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/*============================================================
+	メイン インデックス
+*/
+.main-index {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.main-index .main .base img {
+	width: 100%;
+	max-width: 960px;
+}
+.main-index .main {
+	position: relative;
+	width: 100%;
+}
+.main-index .main .wall {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	max-width: 100%;
+}
+.main-index .main .base {
+	display: none;
+}
+.main-index .main p {
+	position: absolute;
+	bottom: 4.2%;
+	left: 10%;
+	width: 60%;
+}
+.main-index .btn {
+	position: absolute;
+	top: 58%;
+	left: 35%;
+	width: 41%;
+	/*max-width: 411px;*/
+}
+/* SNSボタン */
+.main-index .sns {
+	position: absolute;
+	top: 362px; right: 0px;
+}
+.main-index .sns ul {
+
+}
+.main-index .sns ul li {
+	float: left;
+	padding-right: 4px;
+	font-size: 12px;
+	line-height: 1;
+	vertical-align: top;
+}
+
+/*============================================================
+	メイン コンテンツ
+*/
+.main-contents {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.main-contents img {
+	width: 100%;
+}
+.main-contents h2 {
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+}
+.main-contents .product {
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 25%;
+}
+.main-contents .base {
+	max-width: 880px;
+}
+
+/*============================================================
+	応募要項
+*/
+#top {
+	padding-top: 26px;
+}
+#top .row:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#top .row {
+	width: 100%;
+	zoom: 1;
+}
+#top .lcol {
+	float: left;
+	width: 50%;
+}
+#top .rcol {
+	float: right;
+	width: 50%;
+}
+#top .section {
+	margin: 0 26px;
+	margin-top: 0;
+}
+#top .section h4 {
+	border: 1px solid #013b90;
+	border-bottom-width: 3px;
+	padding: 13px 12px 12px 12px;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	color: #013b90;
+}
+#top .section .inner:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#top .section .inner {
+	padding: 14px 12px 28px 12px;
+	zoom: 1;
+}
+#top .section .inner .bold {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.7;
+}
+#top .rcol .section .inner .bold {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.6;
+	padding-left: 3em !important;
+	text-indent: -3em;
+}
+
+#top .rcol .section .inner .bold span {
+	color: #013b90;
+}
+
+
+/* 対象商品 */
+#top #product {
+	margin: 0 26px;
+}
+#top #product .inner {
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	justify-content: space-between;
+}
+#top #product .inner p {
+	padding: 0 0 0 12px;
+}
+
+#top #product .inner .bold_text {
+	margin-left:1em;
+	text-indent:-1em;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+#top #product .inner .note {
+	font-weight: normal;
+	margin: 8px 0 0 0;
+	margin-left: 1em;
+	text-indent: -1em;
+	line-height: 1.8;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #fd0e7a;
+}
+#top #product .inner .image {
+	text-align: center;
+	margin-left: 10px;
+}
+#top #product .inner .image img {
+	width: 100%;
+	max-width: 428px;
+}
+
+/* 賞品 */
+#top #prize {
+	margin: 0 26px 0 26px;
+}
+#top #prize .inner {
+	display: flex;
+	padding-left: 0;
+	padding-right: 0;
+}
+#top #prize .inner p {
+	padding: 0 0 0 12px;
+}
+#top #prize .image {
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-top: 1px;
+	margin-right: 2px;
+}
+#top #prize .image img {
+	width: 100%;
+	max-width: 420px;
+}
+#top #prize .image .wall {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	max-width: 100%;
+}
+
+/* 応募方法 */
+#top #howto {
+	margin-top: 6px;
+}
+#top #howto .inner {
+	padding-top: 0;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#top #howto .block .section {
+
+}
+#top #howto .block {
+	display: table;
+	padding-top: 14px;
+}
+#top #howto .block ul {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 30px;
+}
+#top #howto .block .image {
+	display: table-cell;
+	vertical-align: top;
+	width: 1px;
+}
+#top #howto .block01 .image img {
+	width: 105px;
+	margin-left: 3px;
+}
+#top #howto .block02 {
+	width: 100%;
+}
+#top #howto .block02 ul {
+	padding-right: 10px;
+}
+#top #howto .block02 .image {
+	width: 243px;
+	text-align: center;
+}
+#top #howto .block02 .image img {
+	width: 243px;
+	margin-top: -3px;
+}
+
+#top #day {
+	margin-top: -7px;
+}
+#top #winning {
+	margin-top: -2px;
+}
+
+/* ボタン */
+#top .btn {
+	padding-top: 3px;
+}
+
+/* ページTOPへ */
+#top .pagetop {
+	display: none;
+}
+
+/*============================================================
+	応募フォーム（シリアルナンバーの入力）
+*/
+#formSerial {
+	padding: 34px 0 0 0;
+}
+#formSerial .read {
+	box-sizing: border-box;
+	display: table;
+	margin-bottom: 26px;
+	padding: 0 34px;
+	width: 100%;
+}
+#formSerial .read ul {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 20px;
+}
+#formSerial .read p {
+	display: table-cell;
+	vertical-align: top;
+	width: 180px;
+	text-align: center;
+}
+#formSerial .read p img {
+	width: 145px;
+}
+
+/* シリアルナンバー */
+#formSerial .serial {
+	padding: 0 24px;
+}
+#formSerial .serial .attention {
+	padding: 0 10px 15px 10px;
+}
+#formSerial .serial .fieldset {
+	display: table;
+	width: 100%;
+}
+#formSerial .serial .fieldset .block {
+	display: table-cell;
+}
+#formSerial .serial .fieldset .block h4,
+#formSerial .serial .fieldset .block .row {
+	margin: 0 10px;
+}
+#formSerial .serial .fieldset .block h4 {
+	padding: 10px 0;
+	font-size: 18px;
+	line-height: 20px;
+	text-align: center;
+	background: #013b90;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+#formSerial .serial .fieldset .block .row {
+	padding: 10px 0;
+}
+#formSerial .serial .fieldset .block .row2 {
+	background: #e4ede4;
+}
+#formSerial .serial .fieldset .block dl:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#formSerial .serial .fieldset .block dl {
+	width: 274px;
+	zoom: 1;
+}
+#formSerial .serial .fieldset .block dl dt {
+	float: left;
+	padding: 5px 0 0 0;
+	width: 120px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+}
+#formSerial .serial .fieldset .block dl dd {
+	float: left;
+	width: 154px;
+	overflow: hidden;
+}
+#formSerial .serial .fieldset .block dl dd .input {
+	width: 90%;
+	font-size: 16px;
+	line-height: 1.2;
+}
+#formSerial .serial .fieldset .block .attention {
+	padding: 0 0 5px 120px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/*============================================================
+	応募フォーム（個人情報の入力）
+*/
+#formInput {
+	padding: 0 34px;
+}
+#formInput .read {
+	padding: 34px 0 0 0;
+}
+
+/* フォーム */
+#formInput .form .attention {
+	padding: 0 0 15px 0;
+}
+#formInput .form table td div {
+	padding-right: 0;
+}
+#formInput .form input.input {
+	width: 88%;
+	margin: 0 5px 0 0;
+}
+#formInput .form input.size1 {
+	width: 30%;
+}
+#formInput .form input.size2 {
+	width: 20%;
+}
+#formInput .form input.size3 {
+	width: 18%;
+}
+#formInput .form td span {
+	padding: 0 5px 0 0;
+}
+#formInput .form td .attention {
+	padding: 0 0 5px 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/*============================================================
+	応募内容確認
+*/
+#formConfirm {
+	padding: 0 20px;
+}
+#formConfirm .read {
+	padding: 34px 14px 0 14px;
+}
+
+/* フォーム */
+#formConfirm .form {
+	padding: 0 14px;
+}
+#formConfirm .form .serial p {
+	padding: 4px 0;
+}
+#formConfirm .form .serial p span {
+	color: #ff0000;
+}
+
+/* ボタン */
+#formConfirm .btn {
+	max-width: 650px;
+}
+#formConfirm .btn .btn_correction {
+	float: left;
+}
+#formConfirm .btn .btn_submit {
+	float: right;
+}
+
+/*============================================================
+	応募完了
+*/
+#formComplete {
+
+}
+
+/* メッセージ */
+#formComplete .messege {
+	text-align: center;
+}
+#formComplete .messege h4 {
+	padding: 62px 0 46px 0;
+	font-size: 38px;
+	line-height: 1.2;
+	color: #013b90;
+}
+#formComplete .messege p {
+	margin: 0 auto;
+	padding: 0 0 38px 0;
+}
+
+/* バナー */
+#formComplete .banner {
+	width: 840px;
+	margin: 0 auto;
+	padding: 20px 0;
+	background: #fff9df;
+}
+#formComplete .banner a {
+	display: inline-block;
+	background: #fff;
+}
+#formComplete .banner .inner:after,
+#formComplete .banner ul:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#formComplete .banner .inner {
+	width: 800px;
+	margin: 0 auto;
+	zoom: 1;
+}
+#formComplete .banner .oillio {
+	float: left;
+	width: 200px;
+}
+#formComplete .banner ul {
+	float: right;
+	width: 580px;
+	zoom: 1;
+}
+#formComplete .banner ul li {
+	float: left;
+}
+#formComplete .banner ul li.list01 {
+	width: 200px;
+}
+#formComplete .banner ul li.list02 {
+	width: 200px;
+}
+#formComplete .banner ul li.list03 {
+	width: 180px;
+}
+#formComplete .banner ul li p {
+	padding: 10px 0 0 0;
+	font-size: 11px;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+/* ////////////////////////////////////////////////////////////
+	Media Only Screen
+*/
+@media only screen and (max-width: 910px) {
+
+#top .wbr {
+	display: none;
+}
+
+}
+@media only screen and (max-width: 960px) {
+
+.footer .sns {
+	left: 0;
+}
+.main-index .sns {
+	right: 9999px;
+}
+.main-index .main p {
+	left: 20%;
+}
+
+/*============================================================
+	応募フォーム（シリアルナンバーの入力）
+*/
+#formSerial .serial .fieldset .block dl {
+	width: 100%;
+}
+#formSerial .serial .fieldset .block dl dt,
+#formSerial .serial .fieldset .block dl dd {
+	float: none;
+	width: auto;
+	text-align: left;
+}
+#formSerial .serial .fieldset .block dl dt {
+	padding: 0 0 6px 10px;
+}
+#formSerial .serial .fieldset .block dl dd {
+	padding: 0 0 0 10px;
+}
+#formSerial .serial .fieldset .block dl dd .input {
+	width: 93%;
+}
+#formSerial .serial .fieldset .block .attention {
+	padding: 0 10px 5px 10px;
+}
+
+/*============================================================
+	応募完了
+*/
+#formComplete .banner {
+	width: 620px;
+}
+#formComplete .banner .inner {
+	width: 100%;
+}
+#formComplete .banner .oillio {
+	float: none;
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+#formComplete .banner ul {
+	float: none;
+	margin: 0 auto;
+	width: 580px;
+}
+
+}
