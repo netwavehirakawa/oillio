@@ -495,13 +495,16 @@ a:hover {
 #top #product .inner p {
 	padding: 0 0 0 12px;
 }
-
 #top #product .inner .bold_text {
 	margin-left:1em;
 	text-indent:-1em;
 	font-size: 18px;
 	line-height: 1.5;
 }
+#top #product .inner .bold_text span {
+	font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
 
 #top #product .inner .note {
 	font-weight: normal;
