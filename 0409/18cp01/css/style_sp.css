@@ -260,6 +260,7 @@
 /* 対象商品 */
 #top #product {
 	margin: 0 8px;
+	margin-top: 10px;
 }
 #top #product .inner {
 	display: block;

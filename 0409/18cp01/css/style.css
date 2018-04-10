@@ -484,6 +484,7 @@ a:hover {
 /* 対象商品 */
 #top #product {
 	margin: 0 26px;
+	margin-top: 27px;
 }
 #top #product .inner {
 	padding-left: 0;
