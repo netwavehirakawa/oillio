@@ -5,10 +5,10 @@
 @media only screen and (max-width: 712px) {
 
 .haslayout-pc {
-	display: none  !important;
+	display: none;
 }
 .haslayout-sp {
-	display: block !important;
+	display: block;
 }
 
 /*============================================================
@@ -19,15 +19,15 @@
 	background-image: none;
 }
 .container-inner {
-	padding-top: 25px;
+	padding-top: 35px;
 }
 
 /*============================================================
 	ヘッダー
 */
 .header {
-	height: 5px;
-	background-color: #fff;
+	height: 35px;
+	background-color: #ff9000;
 }
 .header .logo {
 	position: absolute;
@@ -35,10 +35,10 @@
 }
 .header .logo a {
 	display: block;
-	width: 58px; height: 55px;
+	width: 64px; height: 61px;
 	background: transparent url(../img/sp_logo.png) 0 0 no-repeat;
-	background-size: 58px 55px;
-	-webkit-background-size: 58px 55px;
+	background-size: 64px 61px;
+	-webkit-background-size: 64px 61px;
 }
 .header .logo a img {
 	display: none;
@@ -48,8 +48,8 @@
 	フッター
 */
 .footer {
-	padding: 30px 0;
-	font-size: 12px;
+	padding: 20px 0;
+	font-size: 10px;
 	line-height: 1.5;
 }
 .footer p {
@@ -62,7 +62,6 @@
 */
 .contents-outer {
 	padding: 10px;
-	border-top: 10px solid #fff;
 }
 .contents {
 	font-size: 12px;
@@ -74,9 +73,9 @@
 */
 .page-title {
 	padding: 12px 0 10px 0;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 20px;
 	letter-spacing: 0;
-	padding-top: 0;
 }
 .page-title br {
 	display: block;
@@ -97,8 +96,6 @@
 	background: transparent url(../img/sp_point_circle.png) 0 0.5em no-repeat;
 	background-size: 9px 9px;
 	-webkit-background-size: 9px 9px;
-	font-size: 14px;
-	line-height: 1.643;
 }
 
 /*============================================================
@@ -138,7 +135,6 @@
 }
 .contents .btn .btn_entry {
 	background-image: url(../img/sp_btn_entry.png);
-	height: 74px;
 }
 .contents .btn .btn_next {
 	background-image: url(../img/sp_btn_next.png);
@@ -170,7 +166,7 @@
 	height: 65px;
 }
 .contents .btn p {
-	font-size: 13px;
+	font-size: 10px;
 	line-height: 1.5;
 }
 
@@ -178,17 +174,12 @@
 	メイン インデックス
 */
 .main-index {
-	/*background: #f2ead9;*/
-	margin-top: -15px;
+	background: #f2ead9;
 }
 .main-index .main {
 	background: transparent url(../img/sp_main_contents.jpg) 0 0 no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-}
-.main-index .main img {
-	width: 100%;
-	height: auto;
 }
 .main-index .main.teaser {
 	background: transparent url(../img/sp_main_contents_teaser.jpg) 0 0 no-repeat;
@@ -206,15 +197,14 @@
 }
 .main-index .btn {
 	position: static;
-	padding-top: 10px;
+	padding-top: 8px;
 	width: 100%;
 	max-width: 100%;
 }
 .main-index .btn a {
 	display: block;
 	margin: 0 auto;
-	width: 214px;
-	height: 70px;
+	width: 225px; height: 49px;
 	background: transparent url(../img/sp_main_index_btn.png) 0 0 no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -244,17 +234,16 @@
 #top .section h4 {
 	border-bottom-width: 2px;
 	padding: 9px 8px 8px 8px;
-	font-size: 16px;
-	line-height: 1.2;
-	letter-spacing: 0.12em;
+	font-size: 14px;
+	line-height: 16px;
 }
 #top .section .inner {
 	padding: 14px 8px 28px 8px;
 	zoom: 1;
 }
 #top .section .inner .bold {
-	font-size: 15px;
-	line-height: 1.8;
+	font-size: 14px;
+	line-height: 1.6;
 }
 
 /* 対象商品 */
@@ -262,129 +251,56 @@
 	margin: 0 8px;
 }
 #top #product .inner {
-	display: block;
-	padding: 14px 8px 0 8px;
+	padding: 14px 8px 28px 8px;
 }
 #top #product .inner p {
 	padding: 0;
 }
-
-#top #product .inner .bold_text {
-	font-size: 16px;
-	line-height: 1.69;
-}
-
 #top #product .inner .image {
-	margin-left: 0;
-	margin-top: 10px;
-
+	margin: 10px 0 0 0;
 }
 #top #product .inner .image img {
-	width: 100%;
-	max-width: 100%;
+	width: 90%;
 }
-#top #product .inner .note {
-	font-weight: normal;
-	margin: 13px 0 0 0;
-	margin-left: 0;
-	text-indent: 0;
-	line-height: 1.5;
-	padding-left: 0;
-	font-size: 14px;
-	color: #fd0e7a;
-	letter-spacing: 0.01em;
-	margin-left: 1em;
-}
-
-#top #howto .block01 .image img {
-	width: 100%;
-	margin-left: 0;
-	margin-top: 25px;
-}
-
-
 
 /* 賞品 */
 #top #prize {
 	margin: 0 8px;
-	margin-top: 57px;
 }
 #top #prize .inner {
-	display: block;
-	padding: 14px 8px 0 8px;
+	padding: 14px 8px 28px 8px;
 }
 #top #prize .inner p {
 	padding: 0;
 }
 #top #prize .inner .image {
-	margin: 20px 0 0 0;
+	margin: 15px 0 0 0;
 }
 #top #prize .image img {
-	width: 264px;
-	max-width: 100%;
-	margin: 0 auto;
+	width: 96%;
+	/*max-width: 150px;*/
 }
 
 /* 応募方法 */
-#top #howto {
-	margin-top: 75px;
-}
-
-
 #top #howto .block {
 	display: block;
 	width: 100%;
 }
-
-#top #howto .block02 {
-	width: 100%;
-	margin-top: 15px;
-}
-
 #top #howto .block ul {
 	display: block;
 	padding-right: 0;
 }
-
-#top #howto .block02 li:last-child{
-	margin-top: 8px;
-}
-
 #top #howto .block .image {
 	display: block;
 	margin-top: 15px;
-	width: 100px;
+	width: 100%;
 	text-align: center;
-	margin: 0 auto;
 }
 #top #howto .block02 ul {
 	padding-right: 0;
 }
 #top #howto .block02 .image {
 	width: 100%;
-}
-#top #howto .block02 .image img {
-	width: 273px;
-	height: auto;
-	margin-top: 30px;
-}
-
-
-#top #day {
-	margin-top: 17px;
-}
-
-#top #winning p,
-#top #personal p,
-#top #campaign p {
-	line-height: 1.8;
-	font-size: 14px;
-}
-#top #agreement {
-	margin-top: -2px;
-}
-#top #personal {
-	margin-top: 8px;
 }
 
 /* ボタン */

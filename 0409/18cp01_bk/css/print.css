@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+* html body {
+	zoom: 70%;
+}
+.container-inner {
+	width: 960px;
+}
+.none-print {
+	display: none;
+}
+#formComplete .banner a {
+	display: block;
+	background: transparent;
+	height: 50px;
+}
+#formComplete .banner ul li.list01 img,
+#formComplete .banner ul li.list02 img {
+	display: none;
+}
+
+.lastrecipeRecipe {
+	background-image: url(/ninomiya/assets/top/images/bnr_lastrecipe_recipe_blank.jpg) !important;
+}

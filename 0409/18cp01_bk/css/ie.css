@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* ////////////////////////////////////////////////////////////
+	File Name	ie.css
+*/
+/*============================================================
+	コンテナ
+*/
+.container-inner {
+	width: 960px;
+}
+
+/*============================================================
+	フォーム
+*/
+.contents .form table th div {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+.contents .form table td div {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*============================================================
+	応募要項
+*/
+/* 応募方法 */
+#top #howto .block:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#top #howto .block {
+	display: block;
+	zoom: 1;
+}
+#top #howto .block ul {
+	display: block;
+	float: left;
+}
+#top #howto .block .image {
+	display: inline-block;
+}
+#top #howto .block01 .image {
+	float: left;
+}
+#top #howto .block02 .image {
+	float: right;
+}
+
+
+/*============================================================
+	応募フォーム（シリアルナンバーの入力）
+*/
+#formSerial .read:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#formSerial .read {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 26px;
+	padding: 0;
+	width: 862px;
+	zoom: 1;
+}
+#formSerial .read ul {
+	display: block;
+	padding: 0;
+	float: left;
+}
+#formSerial .read p {
+	display: block;
+	width: 180px;
+	float: right;
+	text-align: center;
+}
+
+/* シリアルナンバー */
+#formSerial .serial {
+	padding: 0;
+}
+#formSerial .serial .attention {
+	padding-left: 34px;
+}
+#formSerial .serial .fieldset:after {
+	content: "."; display: block; clear: both; visibility: hidden; height: 0;
+}
+#formSerial .serial .fieldset {
+	display: block;
+	width: 882px;
+	margin: 0 auto;
+	zoom: 1;
+}
+#formSerial .serial .fieldset .block {
+	display: block;
+	float: left;
+	width: 294px;
+}
+#formSerial .serial .fieldset .block h4,
+#formSerial .serial .fieldset .block .row {
+	margin: 0 auto;
+	width: 274px;
+}
+#formSerial .serial .fieldset .block dl dd .input {
+	box-sizing: content-box;
+	width: 138px;
+}

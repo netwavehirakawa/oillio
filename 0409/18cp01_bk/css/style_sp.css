@@ -26,7 +26,7 @@
 	ヘッダー
 */
 .header {
-	height: 5px;
+	height: 15px;
 	background-color: #fff;
 }
 .header .logo {
@@ -253,7 +253,7 @@
 	zoom: 1;
 }
 #top .section .inner .bold {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.8;
 }
 
@@ -263,13 +263,15 @@
 }
 #top #product .inner {
 	display: block;
-	padding: 14px 8px 0 8px;
+	padding: 14px 8px 28px 8px;
 }
 #top #product .inner p {
 	padding: 0;
 }
 
 #top #product .inner .bold_text {
+	margin-left: 0em;
+	text-indent: 0em;
 	font-size: 16px;
 	line-height: 1.69;
 }
@@ -293,7 +295,6 @@
 	font-size: 14px;
 	color: #fd0e7a;
 	letter-spacing: 0.01em;
-	margin-left: 1em;
 }
 
 #top #howto .block01 .image img {
@@ -307,27 +308,27 @@
 /* 賞品 */
 #top #prize {
 	margin: 0 8px;
-	margin-top: 57px;
+	margin-top: 20px;
 }
 #top #prize .inner {
 	display: block;
-	padding: 14px 8px 0 8px;
+	padding: 14px 8px 28px 8px;
 }
 #top #prize .inner p {
 	padding: 0;
 }
 #top #prize .inner .image {
 	margin: 20px 0 0 0;
+	padding: 0 30px;
 }
 #top #prize .image img {
-	width: 264px;
+	width: 100%;
 	max-width: 100%;
-	margin: 0 auto;
 }
 
 /* 応募方法 */
 #top #howto {
-	margin-top: 75px;
+	margin-top: 57px;
 }
 
 
@@ -364,7 +365,7 @@
 	width: 100%;
 }
 #top #howto .block02 .image img {
-	width: 273px;
+	width: 261px;
 	height: auto;
 	margin-top: 30px;
 }
