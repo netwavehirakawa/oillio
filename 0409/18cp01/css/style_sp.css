@@ -2,6 +2,9 @@
 /* ////////////////////////////////////////////////////////////
 	File Name	style_sp.css
 */
+/*@media only screen and (max-width: 712px) {*/
+
+
 @media only screen and (max-width: 712px) {
 
 .haslayout-pc {
@@ -182,9 +185,9 @@
 	margin-top: -15px;
 }
 .main-index .main {
-	background: transparent url(../img/sp_main_contents.jpg) 0 0 no-repeat;
+	/*background: transparent url(../img/sp_main_contents.jpg) 0 0 no-repeat;
 	background-size: cover;
-	-webkit-background-size: cover;
+	-webkit-background-size: cover;*/
 }
 .main-index .main img {
 	width: 100%;
