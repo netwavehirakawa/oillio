@@ -1,0 +1,614 @@
+@charset "utf-8";
+/* ////////////////////////////////////////////////////////////
+	File Name	style_sp.css
+*/
+/*@media only screen and (max-width: 712px) {*/
+
+
+@media only screen and (max-width: 712px) {
+
+.haslayout-pc {
+	display: none  !important;
+}
+.haslayout-sp {
+	display: block !important;
+}
+
+/*============================================================
+	コンテナ
+*/
+#container {
+	min-width: 320px;
+	background-image: none;
+}
+.container-inner {
+	padding-top: 25px;
+}
+
+/*============================================================
+	ヘッダー
+*/
+.header {
+	height: 5px;
+	background-color: #fff;
+}
+.header .logo {
+	position: absolute;
+	top: -4px; left: 8px;
+}
+.header .logo a {
+	display: block;
+	width: 58px; height: 55px;
+	background: transparent url(../img/sp_logo.png) 0 0 no-repeat;
+	background-size: 58px 55px;
+	-webkit-background-size: 58px 55px;
+}
+.header .logo a img {
+	display: none;
+}
+
+/*============================================================
+	フッター
+*/
+.footer {
+	padding: 30px 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.footer p {
+	display: block;
+	padding: 0;
+}
+
+/*============================================================
+	コンテンツ
+*/
+.contents-outer {
+	padding: 10px;
+	border-top: 10px solid #fff;
+}
+.contents {
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+/*============================================================
+	ページタイトル
+*/
+.page-title {
+	padding: 12px 0 10px 0;
+	font-size: 18px;
+	letter-spacing: 0;
+	padding-top: 0;
+}
+.page-title br {
+	display: block;
+}
+
+/*============================================================
+	ページ下部エリア
+*/
+.foot-area {
+	display: none;
+}
+
+/*============================================================
+	リスト
+*/
+.contents ul.list li {
+	padding-left: 12px;
+	background: transparent url(../img/sp_point_circle.png) 0 0.5em no-repeat;
+	background-size: 9px 9px;
+	-webkit-background-size: 9px 9px;
+	font-size: 14px;
+	line-height: 1.643;
+}
+
+/*============================================================
+	フォーム
+*/
+.contents .form {
+	margin: 20px 0 0 0;
+}
+.contents .form table {
+	font-size: 12px;
+	line-height: 1.5;
+}
+.contents .form table th,
+.contents .form table td {
+	display: block;
+	float: left;
+	padding: 10px 0;
+	width: 100%;
+}
+.contents .form table td {
+	border-top: 0;
+}
+.contents .form table th div,
+.contents .form table td div {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*============================================================
+	ボタン
+*/
+.contents .btn {
+	padding: 20px 0;
+}
+.contents .btn div {
+	width: 229px; height: 50px;
+}
+.contents .btn .btn_entry {
+	background-image: url(../img/sp_btn_entry.png);
+	height: 74px;
+}
+.contents .btn .btn_next {
+	background-image: url(../img/sp_btn_next.png);
+}
+.contents .btn .btn_confirm {
+	background-image: url(../img/sp_btn_confirm.png);
+}
+.contents .btn .btn_correction {
+	width: 140px;
+	background-image: url(../img/sp_btn_correction.png);
+}
+.contents .btn .btn_submit {
+	width: 140px;
+	background-image: url(../img/sp_btn_submit.png);
+}
+.contents .btn .btn_top {
+	background-image: url(../img/sp_btn_top.png);
+}
+.contents .btn .btn_entry,
+.contents .btn .btn_next,
+.contents .btn .btn_confirm,
+.contents .btn .btn_correction,
+.contents .btn .btn_submit,
+.contents .btn .btn_top {
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+.contents .btn input {
+	height: 65px;
+}
+.contents .btn p {
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+/*============================================================
+	メイン インデックス
+*/
+.main-index {
+	/*background: #f2ead9;*/
+	margin-top: -15px;
+}
+.main-index .main {
+	/*background: transparent url(../img/sp_main_contents.jpg) 0 0 no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;*/
+}
+.main-index .main img {
+	width: 100%;
+	height: auto;
+}
+.main-index .main.teaser {
+	background: transparent url(../img/sp_main_contents_teaser.jpg) 0 0 no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+.main-index .main h2 {
+	display: none;
+}
+.main-index .main .base {
+	display: block;
+}
+.main-index .main p {
+	display: none;
+}
+.main-index .btn {
+	position: static;
+	padding-top: 10px;
+	width: 100%;
+	max-width: 100%;
+}
+.main-index .btn a {
+	display: block;
+	margin: 0 auto;
+	width: 214px;
+	height: 70px;
+	background: transparent url(../img/sp_main_index_btn.png) 0 0 no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+.main-index .btn a img {
+	display: none;
+}
+
+/*============================================================
+	メイン コンテンツ
+*/
+
+/*============================================================
+	応募要項
+*/
+#top {
+	padding-top: 10px;
+}
+#top .lcol,
+#top .rcol {
+	float: none;
+	width: auto;
+}
+#top .section {
+	margin: 0 10px;
+}
+#top .section h4 {
+	border-bottom-width: 2px;
+	padding: 9px 8px 8px 8px;
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: 0.12em;
+}
+#top .section .inner {
+	padding: 14px 8px 28px 8px;
+	zoom: 1;
+}
+#top .section .inner .bold {
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+/* 対象商品 */
+#top #product {
+	margin: 0 8px;
+	margin-top: 10px;
+}
+#top #product .inner {
+	display: block;
+	padding: 14px 8px 0 8px;
+}
+#top #product .inner p {
+	padding: 0;
+}
+
+#top #product .inner .bold_text {
+	font-size: 16px;
+	line-height: 1.69;
+}
+
+#top #product .inner .image {
+	margin-left: 0;
+	margin-top: 10px;
+
+}
+#top #product .inner .image img {
+	width: 100%;
+	max-width: 100%;
+}
+#top #product .inner .note {
+	font-weight: normal;
+	margin: 13px 0 0 0;
+	margin-left: 0;
+	text-indent: 0;
+	line-height: 1.5;
+	padding-left: 0;
+	font-size: 14px;
+	color: #fd0e7a;
+	letter-spacing: 0.01em;
+	margin-left: 1em;
+}
+
+#top #howto .block01 .image img {
+	width: 100%;
+	margin-left: 0;
+	margin-top: 25px;
+}
+
+
+
+/* 賞品 */
+#top #prize {
+	margin: 0 8px;
+	margin-top: 57px;
+}
+#top #prize .inner {
+	display: block;
+	padding: 14px 8px 0 8px;
+}
+#top #prize .inner p {
+	padding: 0;
+}
+#top #prize .inner .image {
+	margin: 20px 0 0 0;
+}
+#top #prize .image img {
+	width: 264px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* 応募方法 */
+#top #howto {
+	margin-top: 75px;
+}
+
+
+#top #howto .block {
+	display: block;
+	width: 100%;
+}
+
+#top #howto .block02 {
+	width: 100%;
+	margin-top: 15px;
+}
+
+#top #howto .block ul {
+	display: block;
+	padding-right: 0;
+}
+
+#top #howto .block02 li:last-child{
+	margin-top: 8px;
+}
+
+#top #howto .block .image {
+	display: block;
+	margin-top: 15px;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+#top #howto .block02 ul {
+	padding-right: 0;
+}
+#top #howto .block02 .image {
+	width: 100%;
+}
+#top #howto .block02 .image img {
+	width: 273px;
+	height: auto;
+	margin-top: 30px;
+}
+
+
+#top #day {
+	margin-top: 17px;
+}
+
+#top #winning p,
+#top #personal p,
+#top #campaign p {
+	line-height: 1.8;
+	font-size: 14px;
+}
+#top #agreement {
+	margin-top: -2px;
+}
+#top #personal {
+	margin-top: 8px;
+}
+
+/* ボタン */
+#top .btn {
+	padding-top: 0;
+}
+
+/* ページTOPへ */
+#top .pagetop {
+	display: block;
+	margin: 0 12px;
+	height: 40px;
+}
+#top .pagetop a {
+	display: table;
+	float: right;
+	padding-right: 24px;
+	background: transparent url(../img/sp_pagetop.png) 100% 50% no-repeat;
+	background-size: 20px 20px;
+	-webkit-background-size: 20px 20px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000;
+	text-decoration:none;
+}
+
+/*============================================================
+	応募フォーム（シリアルナンバーの入力）
+*/
+#formSerial {
+	padding: 15px 0 0 0;
+}
+#formSerial .read {
+	display: block;
+	margin-bottom: 26px;
+	padding: 0 10px;
+	width: auto;
+}
+#formSerial .read ul {
+	display: block;
+	padding-right: 0;
+	width: auto;
+}
+#formSerial .read p {
+	display: block;
+	margin-top: 15px;
+	width: auto;
+	text-align: center;
+}
+
+/* シリアルナンバー */
+#formSerial .serial {
+	padding: 0 10px;
+}
+#formSerial .serial .attention {
+	padding: 0 0 10px 0;
+}
+#formSerial .serial .fieldset {
+	display: block;
+	width: auto;
+}
+#formSerial .serial .fieldset .block {
+	display: block;
+	width: 100%;
+}
+#formSerial .serial .fieldset .block h4,
+#formSerial .serial .fieldset .block .row {
+	margin: 0;
+}
+#formSerial .serial .fieldset .block h4 {
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 16px;
+}
+#formSerial .serial .fieldset .block .row {
+	padding: 10px 0;
+}
+#formSerial .serial .fieldset .block dl {
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+#formSerial .serial .fieldset .block dl dt {
+	position: absolute;
+	top: 7px; left: 0;
+	padding: 0;
+	width: 100px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 15px;
+}
+#formSerial .serial .fieldset .block dl dd {
+	padding: 0 0 0 100px;
+	width: auto;
+}
+#formSerial .serial .fieldset .block dl dd .input {
+	width: 93%;
+}
+#formSerial .serial .fieldset .block .attention {
+	padding: 0 0 5px 100px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/*============================================================
+	応募フォーム（個人情報の入力）
+*/
+#formInput {
+	padding: 0;
+}
+#formInput .read {
+	padding: 15px 10px 0 10px;
+}
+
+/* フォーム */
+#formInput .form {
+	padding: 0 10px;
+}
+#formInput .form .attention {
+	padding: 0 0 5px 0;
+}
+#formInput .form .input {
+	width: 100%;
+	margin: 0 5px 0 0;
+}
+#formInput .form input.size1 {
+	width: 31%;
+}
+#formInput .form input.size2 {
+	width: 28%;
+}
+#formInput .form input.size3 {
+	width: 23%;
+}
+
+/*============================================================
+	応募内容確認
+*/
+#formConfirm {
+	padding: 0;
+}
+#formConfirm .read {
+	padding: 15px 10px 0 10px;
+}
+
+/* フォーム */
+#formConfirm .form {
+	padding: 0 10px;
+}
+
+/* ボタン */
+#formConfirm .btn {
+	width: 60%;
+	min-width: 285px;
+}
+
+/*============================================================
+	応募完了
+*/
+#formComplete {
+
+}
+
+/* メッセージ */
+#formComplete .messege h4 {
+	padding: 46px 0 30px 0;
+	font-size: 18px;
+	line-height: 1.2;
+	color: #013b90;
+}
+#formComplete .messege p {
+	padding: 0 0 25px 0;
+	width: auto;
+}
+
+/* バナー */
+#formComplete .banner {
+	width: 100%;
+	padding: 0 0 10px 0;
+	background: transparent;
+	text-align: center;
+}
+#formComplete .banner .oillio {
+	display: none;
+}
+#formComplete .banner ul {
+	width: 100%;
+}
+#formComplete .banner ul li {
+	display: none;
+	float: none;
+	width: 100% !important;
+}
+#formComplete .banner ul li p {
+	text-align: center;
+	font-size: 11px;
+}
+#formComplete .banner ul li.list01,
+#formComplete .banner ul li.list02 {
+	display: block;
+}
+#formComplete .banner ul li.list01 a {
+	display: block;
+	margin: 0 auto;
+	width: 180px; height: 50px;
+	background: transparent url(../img/sp_bnr_ninomiya.jpg) 0 0 no-repeat;
+	background-size: 180px 50px;
+	-webkit-background-size: 180px 50px;
+}
+#formComplete .banner ul li.list02 {
+	margin-top: 20px;
+}
+#formComplete .banner ul li.list02 a {
+	display: block;
+	margin: 0 auto;
+	width: 180px; height: 50px;
+	background: transparent url(../img/sp_bnr_energy.jpg) 0 0 no-repeat;
+	background-size: 180px 50px;
+	-webkit-background-size: 180px 50px;
+}
+
+
+}

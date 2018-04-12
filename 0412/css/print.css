@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+* html body {
+	zoom: 70%;
+}
+
+.none-print {
+	display: none;
+}
+#formComplete .banner a {
+	display: block;
+	background: transparent;
+	height: 50px;
+}
+#formComplete .banner ul li.list01 img,
+#formComplete .banner ul li.list02 img {
+	display: none;
+}
+
+.lastrecipeRecipe {
+	background-image: url(/ninomiya/assets/top/images/bnr_lastrecipe_recipe_blank.jpg) !important;
+}
+
+.main-index .main,
+.main-index .main.teaser{
+	background: transparent url(../img/main_index_open_none.jpg) 0 0 no-repeat !important;
+	padding-bottom: calc(100%*410/960);/* calc(100*ImageHeight/ImageWidth)% */
+	background-size: contain !important;
+}
+
+.main-index .main.teaser{
+	background-image: url(../img/main_index_teaser_none.jpg) !important;
+}
+
+.main-index .main img {
+	visibility: hidden !important;
+}
+
+
+@media (max-width: 712px) {
+	.main-index .main,
+	.main-index .main.teaser {
+		background: transparent url(../img/sp_main_base_none.jpg) 0 0 no-repeat !important;
+		padding-bottom: calc(100%*637/750);
+		background-size: cover !important;
+				-webkit-background-size: cover !important;
+	}
+	
+	.main-index .main.teaser {
+		background-image: url(../img/sp_main_base_teaser_none.jpg) !important;
+	}
+}
